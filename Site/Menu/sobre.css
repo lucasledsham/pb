@@ -1,0 +1,119 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  display: grid;
+  gap: 60px;
+  margin-top: 60px;
+  justify-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2 {
+  margin: 0px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+}
+
+.logo img {
+  height: 108px;
+  width: 135px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  display: block;
+  background: white;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: #7ed956;
+  color: white;
+}
+
+.phos {
+  display: flex;
+  max-width: 850px;
+  justify-items: center;
+  position: relative;
+}
+
+.phos::before {
+  content: "";
+  background-color: #7ed956;
+  height: 4px;
+  width: 60px;
+  position: absolute;
+  top: 30px;
+  right: 300px;
+}
+
+.descricao {
+  background: white;
+  text-align: start;
+  padding: 40px;
+  display: grid;
+  gap: 0px;
+  align-items: center;
+}
+
+.titulo {
+  text-align: center;
+}
+
+.rodape {
+  background: white;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Responsivo */
+
+@media (max-width: 830px) {
+  .learn {
+    display: none;
+  }
+
+  .phos::before {
+    display: none;
+  }
+
+  .descricao {
+    display: grid;
+    gap: 30px;
+  }
+}
